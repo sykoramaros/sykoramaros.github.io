@@ -1,0 +1,133 @@
+// ---------
+// PORTFOLIO
+// ---------
+@font-face {
+  font-family: "Lexend";
+  src: url(../fonts/Lexend/Lexend-VariableFont_wght.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Include any default variable overrides here (though functions won't be available)
+
+// <- tady (nad @importem) je mozne vkladat css atributy pro prepsani hodnot puvodnich atributu
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// ⚠️bootstrap.scss -> musí byt uvedena přípona (bez přípony to někdy soubor nenajde a hlásí chybu)
+// <- tady (pod @importem) se vypisuji nove vlastne vymyslene css atributy
+
+// Then add additional custom code here
+
+// COLORS
+.btn-primary:disabled {
+  color: #c0b8b0;
+}
+
+.white {
+  color: white;
+}
+
+.white-border {
+  border: solid white;
+}
+
+.dark {
+  color: #5b5b5b;
+}
+
+.dark-bg {
+  background-color: #5b5b5b;
+}
+
+.dark-border {
+  border: solid #5b5b5b;
+}
+
+.darkGreen {
+  color: #5d6b48;
+}
+
+.darkGreen-bg {
+  background-color: #5d6b48;
+}
+
+.darkGreen-border {
+  border: solid #5d6b48;
+}
+
+.green {
+  color: #94aa63;
+}
+
+.green-bg {
+  background-color: #94aa63;
+}
+
+.green-border {
+  border: solid #94aa63;
+}
+
+.lightBrown {
+  color: #c0b8b0;
+}
+
+.lightBrown-bg {
+  background-color: #c0b8b0;
+}
+
+.lightBrown-border {
+  border: solid #c0b8b0;
+}
+
+.blue {
+  color: #b5bfc2;
+}
+
+.blue-bg {
+  background-color: #b5bfc2;
+}
+
+.blue-border {
+  border: solid #b5bfc2;
+}
+
+.lightGrey {
+  color: #d9d9d9;
+}
+
+.lightGrey-bg {
+  background-color: #d9d9d9;
+}
+
+.lightGrey-border {
+  border: solid #d9d9d9;
+}
+// ^^^COLORS^^^
+
+body {
+  font-family: "Lexend";
+  color: white;
+  background-color: #c0b8b0;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 10px black;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px 10px white;
+}
+
+.blur-effect {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: #00000081;
+  z-index: 1000;
+}
+
+.github {
+  width: 5.45rem;
+  left: 340px;
+  bottom: 5px
+}

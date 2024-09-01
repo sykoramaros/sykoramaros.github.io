@@ -1,0 +1,7 @@
+node_modules/
+scss/custom.css
+scss/custom.css.map
+index2.html
+package-lock.json
+package.json
+videoTest.html

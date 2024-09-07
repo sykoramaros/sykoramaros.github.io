@@ -14,6 +14,7 @@
   <body>
     <!-- HOME ZACATEK -->
     <section
+      id="home"
       style="
         background-image: url(./img/cycles.png);
         background-size: cover;
@@ -75,24 +76,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto fs-5">
             <li class="nav-item rounded-5 darkGreen-bg p-2 m-auto">
-              <a class="nav-link lightGrey" aria-current="page" href="#"
+              <a class="nav-link lightGrey" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item m-auto">
-              <a class="nav-link" href="#">O mě</a>
+              <a class="nav-link" href="#o-me">O mě</a>
             </li>
             <li class="nav-item m-auto">
-              <a class="nav-link" href="#">Znalosti</a>
+              <a class="nav-link" href="#znalosti">Znalosti</a>
             </li>
             <li class="nav-item m-auto">
-              <a class="nav-link" href="#">Projekty</a>
+              <a class="nav-link" href="#projekty">Projekty</a>
             </li>
             <li class="nav-item m-auto">
-              <a class="nav-link" href="#">Koníčky</a>
+              <a class="nav-link" href="#konicky">Koníčky</a>
             </li>
             <li class="nav-item m-auto">
-              <a class="nav-link" href="#">Kontakt</a>
+              <a class="nav-link" href="#kontakt">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -102,7 +103,7 @@
 
     <!-- ABOUT ZACATEK -->
     <section
-      class="container rounded-5 pb-5"
+      class="container rounded-5 pb-5 full-height-vh"
       style="
         margin-top: 10vw;
         background-image: url(./img/aboutCycles.png);
@@ -110,27 +111,24 @@
         background-repeat: no-repeat;
         background-position: top center;
         width: 100%;
-        height: auto;
       "
     >
-      <h2 class="text-center display-2">O mě</h2>
+      <h2 id="o-me" class="text-center display-2">O mě</h2>
       <div class="row">
-        <div class="col-md-8 m-md-5">
+        <div class="col-md-8">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-m-10 col-xl-9">
               <img
                 src="./img/photo.jpeg"
                 alt=""
-                class="w-50 m-auto rounded-circle box-shadow"
+                class="w-50 mx-4 rounded-circle box-shadow"
               />
             </div>
-            <div>
-              <p
-                class="fs-2 p-4 m-md-5 text-shadow w-md-75 bg-white bg-opacity-25"
-              >
+            <div class="col-12 p-5">
+              <p class="fs-3 p-4 text-shadow bg-white bg-opacity-25">
                 Ahoj,<br />jmenuju se Maroš.<br />Jsem z Ostravy a zde jsem taky
-                absolvolal kurz programovani v Technicke univerzite.<br />Jsem
-                nadseny do programovani.
+                absolvolal kurz programování v Technické univerzitě.<br />Jsem
+                nadšený do programování.
               </p>
             </div>
           </div>
@@ -141,6 +139,7 @@
 
     <!-- SKILLS ZACATEK -->
     <section
+      id="znalosti"
       class="container rounded-5"
       style="
         margin-top: 55px;
@@ -296,6 +295,7 @@
 
     <!-- PROJECTS ZACATEK -->
     <section
+      id="projekty"
       class="container mt-5 border-1 white-border dark-bg rounded-5 pb-5"
     >
       <h2 class="text-center display-2 m-md-auto">Projekty</h2>
@@ -497,13 +497,39 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6 col-xl-4 justify-content-center">
+          <div class="card w-100 h-100">
+            <img src="./img/project9.jpg" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Seznam knih</h5>
+              <p class="card-text">Projekt seznamu knih</p>
+              <a
+                href="http://booklist.unaux.com"
+                class="btn white green-bg mt-auto position-relative"
+                target="_blank"
+              >
+                Přejít na stránku
+              </a>
+              <a
+                href="https://github.com/MaroshSykora/books-php"
+                target="_blank"
+              >
+                <img
+                  src="./ico/gitHub.svg"
+                  alt=""
+                  class="position-absolute github"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- PROJECTS KONEC -->
 
     <!-- HOBBIES ZACATEK -->
     <section
-      id="hobbies"
+      id="konicky"
       class="container mt-5 green-bg border-4 darkGreen-border rounded-5 shadow"
     >
       <h2 class="text-center display-2 my-4">Koníčky</h2>
@@ -616,7 +642,10 @@
     <!-- HOBBIES KONEC -->
 
     <!-- CONTACT ZACATEK -->
-    <section class="container mt-4 mt-md-5 align-self-center m-auto">
+    <section
+      id="kontakt"
+      class="container mt-4 mt-md-5 align-self-center m-auto"
+    >
       <h2 class="text-center display-2 dark m-auto">Kontakt</h2>
       <div class="row border-4 dark-border rounded-5 m-auto blue-bg shadow">
         <div class="col-md-6 m-auto">

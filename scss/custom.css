@@ -12061,6 +12061,14 @@ body {
   background-color: #c0b8b0;
 }
 
+.full-height-vh {
+  height: 100vh;
+}
+
+flexibile-font {
+  font-size: 3rem;
+}
+
 .text-shadow {
   text-shadow: 2px 2px 10px black;
 }

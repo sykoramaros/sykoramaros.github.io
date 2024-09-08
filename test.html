@@ -5,173 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scss/custom.css" />
     <title>Document</title>
+  
   </head>
   <body>
-    <section
-      id="znalosti"
-      style="position: relative; margin: 0; width: auto; height: 100vh"
-    >
-      <!-- Toggler buttons for small screens -->
-      <!-- Toggler buttons for small screens -->
-      <!-- Toggler buttons for small screens -->
-      <!-- Toggler buttons for small screens -->
-      <!-- Toggler buttons for small screens -->
-      <!-- Toggler buttons for small screens -->
-<div class="btn-group d-md-none mb-4" role="group" aria-label="Basic radio toggle button group">
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1" data-bs-toggle="collapse" data-bs-target="#section1">Programovací jazyky</label>
+    
+    <!-- Přepínače -->
+    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#nadpis-h1" aria-expanded="false" aria-controls="nadpis-h1">
+      Přepnout h1
+  </button>
+  <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#nadpis-h2" aria-expanded="false" aria-controls="nadpis-h2">
+      Přepnout h2
+  </button>
 
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2" data-bs-toggle="collapse" data-bs-target="#section2">Webové technologie</label>
-
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio3" data-bs-toggle="collapse" data-bs-target="#section3">Vývojové nástroje</label>
-
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio4" data-bs-toggle="collapse" data-bs-target="#section4">Databáze</label>
-
-  <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio5" data-bs-toggle="collapse" data-bs-target="#section5">3D grafika</label>
-</div>
-
-<!-- Sections to show/hide -->
-<div class="row d-flex justify-content-evenly">
-  <!-- PRVNI SLOUPEC PROGRAMOVACI JAZYKY -->
-  <div class="col-md-6 py-4 bg-white bg-opacity-25 collapse d-md-block" id="section1">
-    <h3 class="text-center text-shadow">Programovací jazyky</h3>
-    <div class="d-flex flex-wrap gap-1 justify-content-around">
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/java.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">Java</figcaption>
-        </figure>
+  <!-- Accordion kontejner -->
+  <div class="accordion mt-3" id="accordionExample">
+      <!-- První nadpis -->
+      <div class="collapse" id="nadpis-h1" data-bs-parent="#accordionExample">
+          <h1>Ahoj já jsem h1 nadpis</h1>
       </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/csharp.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">C#</figcaption>
-        </figure>
+      <!-- Druhý nadpis -->
+      <div class="collapse" id="nadpis-h2" data-bs-parent="#accordionExample">
+          <h2>Zdarec já jsem h2 nadpis</h2>
       </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/javascript.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">JavaScript</figcaption>
-        </figure>
-      </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/php.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">PHP</figcaption>
-        </figure>
-      </div>
-    </div>
   </div>
-
-  <!-- DRUHY SLOUPEC WEBOVE TECHNOLOGIE -->
-  <div class="col-md-6 py-4 bg-white bg-opacity-25 collapse d-md-block" id="section2">
-    <h3 class="text-center text-shadow">Webové technologie</h3>
-    <div class="d-flex flex-wrap gap-1 justify-content-around">
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/html.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">HTML</figcaption>
-        </figure>
-      </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/css.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">CSS</figcaption>
-        </figure>
-      </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/bootstrap.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">Bootstrap</figcaption>
-        </figure>
-      </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/react.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">React</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-
-  <!-- TRETI SLOUPEC VYVOJOVE NASTROJE -->
-  <div class="col-md-6 py-4 bg-white bg-opacity-25 collapse d-md-block" id="section3">
-    <h3 class="text-center text-shadow">Vývojové nástroje a platformy</h3>
-    <div class="d-flex flex-wrap gap-1 justify-content-around">
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/git.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">Git</figcaption>
-        </figure>
-      </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/docker.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">Docker</figcaption>
-        </figure>
-      </div>
-      <div class="w-25 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/azure.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">Azure</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-
-  <!-- CTVRTY SLOUPEC DATABAZE -->
-  <div class="col-md-3 py-4 bg-white bg-opacity-25 collapse d-md-block" id="section4">
-    <h3 class="text-center text-shadow">Databáze</h3>
-    <div class="d-flex flex-wrap gap-1 justify-content-around">
-      <div class="w-50 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/mysql.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">MySQL</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-
-  <!-- PATY SLOUPEC 3D GRAFIKA -->
-  <div class="col-md-3 py-4 bg-white bg-opacity-25 collapse d-md-block" id="section5">
-    <h3 class="text-center text-shadow">3D grafika</h3>
-    <div class="d-flex flex-wrap gap-1 justify-content-around">
-      <div class="w-50 d-flex justify-content-center">
-        <figure class="row d-flex justify-content-center">
-          <img src="./ico/blender.svg" alt="" class="bg-white rounded-5 bg-opacity-50" />
-          <figcaption class="text-center">Blender</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</div>
-
-      <!-- Zde umístěte obsah vaší sekce -->
-    </section>
-
-    <!-- JavaScript -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var toggles = document.querySelectorAll(".btn-check")
-        toggles.forEach(function (toggle) {
-          toggle.addEventListener("change", function () {
-            var target = this.nextElementSibling.getAttribute("data-bs-target")
-            var allSections = document.querySelectorAll(".collapse.d-md-none")
-            allSections.forEach(function (section) {
-              if (section.id === target.substring(1)) {
-                section.classList.add("show")
-              } else {
-                section.classList.remove("show")
-              }
-            })
-          })
-        })
-      })
-    </script>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>

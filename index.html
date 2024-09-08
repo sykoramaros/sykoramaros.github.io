@@ -141,7 +141,7 @@
     <!-- SKILLS ZACATEK -->
     <section
       id="znalosti"
-      class="container full-height rounded-5"
+      class="container d-flex flex-column align-items-center full-height rounded-5"
       style="
         margin-top: 55px;
         background-image: url(./img/skillsCycles.png);
@@ -151,168 +151,175 @@
         width: 100%;
       "
     >
-      <h2 class="text-center display-2 mt-3">Znalosti</h2>
-      <div class="row d-flex justify-content-evenly gap-2">
-        <!-- PRVNI SLOUPEC PROGRAMOVACI JAZYKY -->
-        <div class="col-12 col-md-6 bg-white bg-opacity-25">
-          <h3 class="text-center text-shadow">Programovací jazyky</h3>
-          <div class="row d-flex flex-wrap gap-1 justify-content-around">
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/java.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">Java</figcaption>
-              </figure>
-            </div>
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/csharp.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center col-12">C#</figcaption>
-              </figure>
-            </div>
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/javascript.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">JavaScript</figcaption>
-              </figure>
-            </div>
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/php.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">PHP</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-        <!-- DRUHY SLOUPEC -->
-        <div class="col-12 col-md-6 bg-white bg-opacity-25">
-          <h3 class="text-center text-shadow">Webové technologie</h3>
-          <div class="row d-flex flex-wrap gap-1 justify-content-around">
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/html.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">HTML</figcaption>
-              </figure>
-            </div>
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/css.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">CSS</figcaption>
-              </figure>
-            </div>
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/bootstrap.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">Bootstrap</figcaption>
-              </figure>
-            </div>
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/react.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">React</figcaption>
-              </figure>
+      <!-- Vnější okraj s flexboxem pro centrování obsahu -->
+      <div class="row d-flex flex-column align-items-center w-100">
+        <!-- Nadpis s textem 'Znalosti', zarovnaný na střed -->
+        <h2 class="col-12 text-center display-2 mt-3">Znalosti</h2>
+        <div class="row d-flex justify-content-center gap-1">
+          <!-- První sloupec - Programovací jazyky -->
+          <div class="col-12 col-md-6 bg-white bg-opacity-25">
+            <h3 class="text-center text-shadow">Programovací jazyky</h3>
+            <div class="row d-flex flex-wrap justify-content-evenly">
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/java.svg"
+                    alt="Java"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">Java</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/csharp.svg"
+                    alt="C#"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">C#</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/javascript.svg"
+                    alt="JavaScript"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">JavaScript</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/php.svg"
+                    alt="PHP"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">PHP</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- TRETI SLOUPEC -->
-        <div class="col-12 col-md-5 bg-white bg-opacity-25">
-          <h3 class="text-center text-shadow">Vývojové nástroje</h3>
-          <div class="row d-flex flex-wrap gap-1 justify-content-around">
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/git.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">Git</figcaption>
-              </figure>
-            </div>
 
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/docker.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">Docker</figcaption>
-              </figure>
-            </div>
-
-            <div class="col-2">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/azure.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">Azure</figcaption>
-              </figure>
+          <!-- Druhý sloupec - Webové technologie -->
+          <div class="col-12 col-md-6 bg-white bg-opacity-25">
+            <h3 class="text-center text-shadow">Webové technologie</h3>
+            <div
+              class="row d-flex flex-wrap justify-content-center justify-content-evenly gap-1"
+            >
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/html.svg"
+                    alt="HTML"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">HTML</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/css.svg"
+                    alt="CSS"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">CSS</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/bootstrap.svg"
+                    alt="Bootstrap"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">Bootstrap</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/react.svg"
+                    alt="React"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">React</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- CTVRTY SLOUPEC -->
-        <div class="col-5 col-md-3 bg-white bg-opacity-25">
-          <h3 class="text-center text-shadow">Databáze</h3>
-          <div class="row d-flex flex-wrap gap-1 justify-content-around">
-            <div class="col-4">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/mysql.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">MySQL</figcaption>
-              </figure>
+          <!-- Třetí sloupec - Vývojové nástroje -->
+          <div class="col-12 col-md-6 bg-white bg-opacity-25 mb-2">
+            <h3 class="text-center text-shadow">Vývojové nástroje</h3>
+            <div class="row d-flex flex-wrap justify-content-evenly gap-1">
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/git.svg"
+                    alt="Git"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">Git</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/docker.svg"
+                    alt="Docker"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">Docker</figcaption>
+                </figure>
+              </div>
+              <div class="col-4 col-md-3 mb-2">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/azure.svg"
+                    alt="Azure"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">Azure</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- PATY SLOUPEC -->
-        <div class="col-5 col-md-3 bg-white bg-opacity-25">
-          <h3 class="text-center text-shadow">3D grafika</h3>
-          <div class="row d-flex flex-wrap gap-1 justify-content-around">
-            <div class="col-4">
-              <figure class="row d-flex justify-content-center">
-                <img
-                  src="./ico/blender.svg"
-                  alt=""
-                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
-                />
-                <figcaption class="text-center">Blender</figcaption>
-              </figure>
+
+          <!-- Čtvrtý sloupec - Databáze -->
+          <div class="col-12 bg-white bg-opacity-25">
+            <h3 class="text-center text-shadow">Databáze</h3>
+            <div class="row d-flex justify-content-center">
+              <div class="col-4 col-md-3">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/mysql.svg"
+                    alt="MySQL"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">MySQL</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pátý sloupec - 3D grafika -->
+          <div class="col-12 bg-white bg-opacity-25">
+            <h3 class="text-center text-shadow">3D grafika</h3>
+            <div class="row d-flex justify-content-center">
+              <div class="col-4 col-md-3">
+                <figure class="d-flex flex-column align-items-center">
+                  <img
+                    src="./ico/blender.svg"
+                    alt="Blender"
+                    class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-sm-contain"
+                  />
+                  <figcaption class="text-center">Blender</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </div>

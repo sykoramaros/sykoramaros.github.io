@@ -114,6 +114,11 @@ body {
 .full-height {
   height: 100vh;
 }
+@media (max-width: 576px) {
+  .full-height {
+    height: auto; /* Nebo zrušit výšku podle potřeby */
+  }
+}
 
 flexibile-font {
   font-size: 3rem;

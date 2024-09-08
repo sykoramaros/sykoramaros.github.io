@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/custom.css" />
+    <title>Document</title>
+    <style>
+      /* Vytvoření malých bílých puntíků */
+      .dot {
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        border: 2px solid black; /* Černý rámeček pro lepší viditelnost */
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Přepínače -->
+  <div class="container mt-3">
+    <button class="btn btn-primary me-2" data-bs-toggle="collapse" data-bs-target="#programmingLanguages" aria-expanded="false" aria-controls="programmingLanguages">
+      Přepnout Programovací jazyky
+    </button>
+    <button class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#webTechnologies" aria-expanded="false" aria-controls="webTechnologies">
+      Přepnout Webové technologie
+    </button>
+  </div>
+
+  <!-- Accordion kontejner -->
+  <div class="container mt-3">
+    <!-- Programovací jazyky -->
+    <div class="collapse" id="programmingLanguages">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6 bg-white bg-opacity-25 mb-3 p-2 p-sm-3">
+          <h3 class="text-center text-shadow h4">Programovací jazyky</h3>
+          <div class="row d-flex justify-content-center">
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/java.svg"
+                  alt="Java"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">Java</figcaption>
+              </figure>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/csharp.svg"
+                  alt="C#"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">C#</figcaption>
+              </figure>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/javascript.svg"
+                  alt="JavaScript"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">JavaScript</figcaption>
+              </figure>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/php.svg"
+                  alt="PHP"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">PHP</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Webové technologie -->
+    <div class="collapse" id="webTechnologies">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6 bg-white bg-opacity-25 mb-3 p-2 p-sm-3">
+          <h3 class="text-center text-shadow h4">Webové technologie</h3>
+          <div class="row d-flex justify-content-center">
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/html.svg"
+                  alt="HTML"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">HTML</figcaption>
+              </figure>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/css.svg"
+                  alt="CSS"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">CSS</figcaption>
+              </figure>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/bootstrap.svg"
+                  alt="Bootstrap"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">Bootstrap</figcaption>
+              </figure>
+            </div>
+            <div class="col-6 col-md-3 mb-2">
+              <figure class="d-flex flex-column align-items-center">
+                <img
+                  src="./ico/react.svg"
+                  alt="React"
+                  class="img-fluid bg-white rounded-5 bg-opacity-50 object-fit-contain"
+                  style="max-width: 80px; max-height: 80px;"
+                />
+                <figcaption class="text-center small">React</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

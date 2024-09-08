@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scss/custom.css" />
     <title>Marosh Sykora</title>
-    <!-- <style>
+    <style>
       body * {
         border: 1px solid yellow;
       }
-    </style> -->
+    </style>
   </head>
   <body>
     <!-- HOME ZACATEK -->
@@ -103,7 +103,8 @@
 
     <!-- ABOUT ZACATEK -->
     <section
-      class="container rounded-5 pb-5 full-height-vh"
+      id="o-me"
+      class="container d-flex flex-column rounded-5 pb-5 full-height"
       style="
         margin-top: 10vw;
         background-image: url(./img/aboutCycles.png);
@@ -113,7 +114,7 @@
         width: 100%;
       "
     >
-      <h2 id="o-me" class="text-center display-2">O mě</h2>
+      <h2 class="text-center display-2">O mě</h2>
       <div class="row">
         <div class="col-md-8">
           <div class="row">
@@ -124,7 +125,7 @@
                 class="w-50 mx-4 rounded-circle box-shadow"
               />
             </div>
-            <div class="col-12 p-5">
+            <div class="col-12 p-3 p-md-5">
               <p class="fs-3 p-4 text-shadow bg-white bg-opacity-25">
                 Ahoj,<br />jmenuju se Maroš.<br />Jsem z Ostravy a zde jsem taky
                 absolvolal kurz programování v Technické univerzitě.<br />Jsem
@@ -140,7 +141,7 @@
     <!-- SKILLS ZACATEK -->
     <section
       id="znalosti"
-      class="container rounded-5"
+      class="container full-height rounded-5"
       style="
         margin-top: 55px;
         background-image: url(./img/skillsCycles.png);
@@ -148,139 +149,167 @@
         background-repeat: no-repeat;
         background-position: top center;
         width: 100%;
-        height: auto;
       "
     >
       <h2 class="text-center display-2 mt-3">Znalosti</h2>
-      <div class="row">
-        <div class="col-md-5 m-md-5 py-4 bg-white bg-opacity-25">
+      <div class="row d-flex justify-content-evenly">
+        <!-- PRVNI SLOUPEC PROGRAMOVACI JAZYKY -->
+        <div class="col-md-6 py-4 bg-white bg-opacity-25">
+          <h3 class="text-center text-shadow">Programovací jazyky</h3>
           <div class="d-flex flex-wrap gap-1 justify-content-around">
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/git.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">Git</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/html.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">HTML</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/css.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">CSS</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/javascript.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">CSS</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
                 <img
                   src="./ico/java.svg"
                   alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
+                  class="bg-white rounded-5 bg-opacity-50"
                 />
                 <figcaption class="text-center">Java</figcaption>
               </figure>
             </div>
             <div class="w-25">
-              <figure>
+              <figure class="row d-flex justify-content-center">
                 <img
                   src="./ico/csharp.svg"
                   alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
+                  class="bg-white rounded-5 bg-opacity-50"
                 />
-                <figcaption class="text-center">C#</figcaption>
+                <figcaption class="text-center col-12">C#</figcaption>
               </figure>
             </div>
-            <div class="w-25">
-              <figure>
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
                 <img
-                  src="./ico/docker.svg"
+                  src="./ico/javascript.svg"
                   alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
+                  class="bg-white rounded-5 bg-opacity-50"
                 />
-                <figcaption class="text-center">Docker</figcaption>
+                <figcaption class="text-center">JavaScript</figcaption>
               </figure>
             </div>
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/react.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">React</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/bootstrap.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">Bootstrap</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/azure.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">Azure</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
-                <img
-                  src="./ico/mysql.svg"
-                  alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
-                />
-                <figcaption class="text-center">MySQL</figcaption>
-              </figure>
-            </div>
-            <div class="w-25">
-              <figure>
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
                 <img
                   src="./ico/php.svg"
                   alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
+                  class="bg-white rounded-5 bg-opacity-50"
                 />
                 <figcaption class="text-center">PHP</figcaption>
               </figure>
             </div>
+          </div>
+        </div>
+        <!-- DRUHY SLOUPEC -->
+        <div class="col-md-6 py-4 bg-white bg-opacity-25">
+          <h3 class="text-center text-shadow">Webové technologie</h3>
+          <div class="d-flex flex-wrap gap-1 justify-content-around">
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/html.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">HTML</figcaption>
+              </figure>
+            </div>
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/css.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">CSS</figcaption>
+              </figure>
+            </div>
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/bootstrap.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">Bootstrap</figcaption>
+              </figure>
+            </div>
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/react.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">React</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- TRETI SLOUPEC -->
+        <div class="col-md-6 py-4 bg-white bg-opacity-25">
+          <h3 class="text-center text-shadow">Vývojové nástroje a platformy</h3>
+          <div class="d-flex flex-wrap gap-1 justify-content-around">
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/git.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">Git</figcaption>
+              </figure>
+            </div>
+
+            <div class="w-25 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/docker.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">Docker</figcaption>
+              </figure>
+            </div>
+
             <div class="w-25">
-              <figure>
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/azure.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">Azure</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTVRTY SLOUPEC -->
+        <div class="col-md-3 py-4 bg-white bg-opacity-25">
+          <h3 class="text-center text-shadow">Databáze</h3>
+          <div class="d-flex flex-wrap gap-1 justify-content-around">
+            <div class="w-50 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
+                <img
+                  src="./ico/mysql.svg"
+                  alt=""
+                  class="bg-white rounded-5 bg-opacity-50"
+                />
+                <figcaption class="text-center">MySQL</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <!-- PATY SLOUPEC -->
+        <div class="col-md-3 py-4 bg-white bg-opacity-25">
+          <h3 class="text-center text-shadow">3D grafika</h3>
+          <div class="d-flex flex-wrap gap-1 justify-content-around">
+            <div class="w-50 d-flex justify-content-center">
+              <figure class="row d-flex justify-content-center">
                 <img
                   src="./ico/blender.svg"
                   alt=""
-                  class="w-100 bg-white rounded-5 bg-opacity-50"
+                  class="bg-white rounded-5 bg-opacity-50"
                 />
                 <figcaption class="text-center">Blender</figcaption>
               </figure>

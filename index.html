@@ -141,7 +141,7 @@
     <!-- SKILLS ZACATEK -->
     <section
       id="znalosti"
-      class="container d-flex flex-column align-items-center full-height rounded-5"
+      class="container d-flex flex-column align-items-center pb-5 rounded-5"
       style="
         margin-top: 55px;
         background-image: url(./img/skillsCycles.png);
@@ -149,15 +149,16 @@
         background-repeat: no-repeat;
         background-position: top center;
         width: 100%;
+        height: auto;
       "
     >
       <!-- Vnější okraj s flexboxem pro centrování obsahu -->
-      <div class="row d-flex flex-column align-items-center w-100">
+      <div class="row d-flex flex-column align-items-center">
         <!-- Nadpis s textem 'Znalosti', zarovnaný na střed -->
-        <h2 class="col-12 text-center display-2 mt-3">Znalosti</h2>
-        <div class="row d-flex justify-content-center gap-1">
+        <h2 class="text-center display-2 mt-3">Znalosti</h2>
+        <div class="row d-flex justify-content-center gap-3">
           <!-- První sloupec - Programovací jazyky -->
-          <div class="col-12 col-md-6 bg-white bg-opacity-25">
+          <div class="col-10 bg-white bg-opacity-25">
             <h3 class="text-center text-shadow">Programovací jazyky</h3>
             <div class="row d-flex flex-wrap justify-content-evenly">
               <div class="col-4 col-md-3 mb-2">
@@ -204,11 +205,9 @@
           </div>
 
           <!-- Druhý sloupec - Webové technologie -->
-          <div class="col-12 col-md-6 bg-white bg-opacity-25">
+          <div class="col-10 bg-white bg-opacity-25">
             <h3 class="text-center text-shadow">Webové technologie</h3>
-            <div
-              class="row d-flex flex-wrap justify-content-center justify-content-evenly gap-1"
-            >
+            <div class="row d-flex flex-wrap justify-content-evenly">
               <div class="col-4 col-md-3 mb-2">
                 <figure class="d-flex flex-column align-items-center">
                   <img
@@ -253,7 +252,7 @@
           </div>
 
           <!-- Třetí sloupec - Vývojové nástroje -->
-          <div class="col-12 col-md-6 bg-white bg-opacity-25 mb-2">
+          <div class="col-10 bg-white bg-opacity-25 mb-2">
             <h3 class="text-center text-shadow">Vývojové nástroje</h3>
             <div class="row d-flex flex-wrap justify-content-evenly gap-1">
               <div class="col-4 col-md-3 mb-2">
@@ -290,10 +289,10 @@
           </div>
 
           <!-- Čtvrtý sloupec - Databáze -->
-          <div class="col-12 bg-white bg-opacity-25">
+          <div class="col-5 bg-white bg-opacity-25">
             <h3 class="text-center text-shadow">Databáze</h3>
             <div class="row d-flex justify-content-center">
-              <div class="col-4 col-md-3">
+              <div class="col-6">
                 <figure class="d-flex flex-column align-items-center">
                   <img
                     src="./ico/mysql.svg"
@@ -307,10 +306,10 @@
           </div>
 
           <!-- Pátý sloupec - 3D grafika -->
-          <div class="col-12 bg-white bg-opacity-25">
+          <div class="col-5 bg-white bg-opacity-25">
             <h3 class="text-center text-shadow">3D grafika</h3>
             <div class="row d-flex justify-content-center">
-              <div class="col-4 col-md-3">
+              <div class="col-6">
                 <figure class="d-flex flex-column align-items-center">
                   <img
                     src="./ico/blender.svg"
@@ -595,12 +594,12 @@
     <!-- HOBBIES ZACATEK -->
     <section
       id="konicky"
-      class="container mt-5 green-bg border-4 darkGreen-border rounded-5 shadow"
+      class="container my-5 pb-5 green-bg border-4 darkGreen-border rounded-5 shadow"
     >
       <h2 class="text-center display-2 my-4">Koníčky</h2>
 
-      <div class="row m-auto">
-        <div class="col-12 col-sm-12 col-md-7">
+      <div class="row d-flex justify-content-center align-items-center gap-5">
+        <div class="col-12 col-md-6 mx-2">
           <!-- CAROUSEL ZACATEK -->
           <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
@@ -624,8 +623,14 @@
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner white-border rounded-5 shadow">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./img/horses.jpeg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
@@ -699,7 +704,7 @@
           </div>
           <!-- CAROUSEL KONEC -->
         </div>
-        <div class="col-md-5 list-group m-auto fs-2">
+        <div class="col-10 col-md-4 list-group mx-2 fluid-text">
           <a class="list-group-item">Znakový jazyk</a>
           <a class="list-group-item">Kreslení na iPad</a>
           <a class="list-group-item">Zvířata</a>

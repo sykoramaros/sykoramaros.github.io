@@ -152,3 +152,7 @@ flexibile-font {
   margin-left: auto;
   bottom: 5px;
 }
+
+.fluid-text {
+  font-size: clamp(20px, 2.5vw, 35px);
+}

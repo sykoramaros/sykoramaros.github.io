@@ -732,58 +732,109 @@
         </div>
         <div class="col-md-6 m-auto">
           <div class="mb-3">
-            <div class="row g-2 p-3 m-auto">
+            <form
+              class="row g-2 p-3 m-auto"
+              id="contactForm"
+              action="send-mail.php"
+              method="post"
+            >
+              <!-- <div id="alert-placeholder"></div> -->
               <!-- <label for="inputName">Name</label> -->
+
               <div class="col-sm-12 col-md-6">
                 <input
-                  name="inputName"
-                  id="inputName"
+                  for="name"
+                  name="name"
+                  id="name"
                   type="text"
                   class="form-control"
                   placeholder="Jméno*"
+                  required
                 />
               </div>
               <div class="col-sm-12 col-md-6">
                 <input
-                  name="inputEmail"
+                  for="email"
+                  name="email"
                   type="email"
                   class="form-control"
-                  id="inputEmail"
+                  id="email"
                   placeholder="Email*"
+                  required
                 />
               </div>
               <div class="col-sm-12">
                 <input
-                  name="inputSubject"
-                  type="email"
+                  for="subject"
+                  name="subject"
+                  type="text"
                   class="form-control"
-                  id="inputSubject"
+                  id="subject"
                   placeholder="Předmět*"
                 />
               </div>
 
               <div class="col-md-12">
                 <textarea
-                  name="inputTextArea"
+                  for="text"
+                  name="text"
                   class="form-control"
-                  id="inputTextArea"
+                  id="text"
                   rows="5"
-                  placeholder="Vaše zprává (Zatím není funkční)"
+                  placeholder="Vaše zprává"
+                  required
                 ></textarea>
               </div>
               <div>
                 <button
                   class="p-2 white rounded-3 darkGreen-bg border-3 green-border"
+                  type="submit"
                 >
                   Poslat zpravu
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
     <!-- CONTACT KONEC -->
+
+    <!-- MODAL -->
+    <div
+      class="modal fade modal-dialog modal-dialog-centered"
+      id="alertModal"
+      tabindex="-1"
+      aria-labelledby="alertModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title dark" id="alertModalLabel">Oznámení</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body green" id="modalMessage">
+            Email has been sent successfully.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Zavřít
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL KONEC -->
 
     <!-- FOOTER ZACATEK -->
     <section
@@ -805,5 +856,32 @@
 
     <!-- JavaScript -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- skript pro odesilani emailu na vlastni email -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search)
+        const modalMessage = document.querySelector("#modalMessage")
+
+        if (params.has("status")) {
+          let message = ""
+          let alertType = ""
+          if (params.get("status") === "success") {
+            message = "Email byl úspěšně odeslán."
+          } else if (params.get("status") === "error") {
+            message =
+              "Nastala chyba při odesílání emailu. Zkuste to prosím znovu."
+          }
+
+          if (message) {
+            modalMessage.innerText = message // Nastav zprávu do modalního okna
+            const alertModal = new bootstrap.Modal(
+              document.getElementById("alertModal")
+            ) // Inicializuj modal
+            alertModal.show() // Zobraz modal
+          }
+        }
+      })
+    </script>
   </body>
 </html>
